@@ -1,4 +1,4 @@
-# Task-3_Build-a-To-Do-List-Web-App
+# Task-2_Build-a-To-Do-List-Web-App
 rocs-productivity-pro/
 ├── index.html       # Main HTML file for the app
 ├── style.css        # CSS styles for layout and design
