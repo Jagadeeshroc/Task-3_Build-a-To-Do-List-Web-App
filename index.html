@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ROcs Productivity Pro - To-Do App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-container">
+    <header class="app-header">
+      <h1> Rocs Productivity Pro</h1>
+      <div class="date-display" id="current-date"></div>
+    </header>
+
+    <div class="main-content">
+      <div class="content-area">
+        <div class="task-input-section">
+          <div class="input-group">
+            <input type="text" id="task-input" placeholder="What needs to be done?" />
+            <button id="add-btn" class="add-btn">Add Task</button>
+          </div>
+          <div class="task-options">
+            <div class="option-group">
+              <label for="task-date">Due Date:</label>
+              <input type="date" id="task-date" />
+            </div>
+            <div class="option-group">
+              <input type="checkbox" id="important-task" />
+              <label for="important-task">Important</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="stats">
+          <div class="stat-item">
+            <span class="stat-value" id="total-tasks">0</span>
+            <span class="stat-label">Total Tasks</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value" id="completed-tasks">0</span>
+            <span class="stat-label">Completed</span>
+          </div>
+        </div>
+
+        <div class="tasks-container">
+          <ul id="task-list"></ul>
+          <div id="empty-state" class="empty-state">
+            <h3>No tasks yet</h3>
+            <p>Add a task to get started!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
